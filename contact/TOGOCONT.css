@@ -55,7 +55,7 @@
 }
 
  .loco:hover {
-    background-image: url('/Architec/cont.jpg');
+    background-image: url('./Architec/cont.jpg');
     background-size:100% 100% ;  
 }
 

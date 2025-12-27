@@ -131,7 +131,7 @@
 
 .EBCON {
     min-height: 80vh;   margin-top: 3%;
-    background: url('/Architec/build3.webp') center/cover no-repeat;
+    background: url('./Architec/build3.webp') center/cover no-repeat;
     position: relative;
 }
 .EBCON::after {
