@@ -1,0 +1,514 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        html {  scroll-behavior: smooth;  }
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+        flex-shrink: 0;  
+    }
+
+.wrapper {
+  display: block;
+    width: 100%;
+    min-height: 100vh;  
+  height: auto;   
+    top:0px;    left:0;
+        overflow: hidden;
+}
+
+.serv{
+     margin-top: 3%;   padding: 1rem; 
+     line-height: 1.6;
+
+     .WWD {
+        font-size: 1.125rem; letter-spacing: 5px;
+      text-transform: uppercase; font-weight: bold;
+      color: rgb(246, 142, 7);
+     }  
+     .OS {
+        font-size: 2.5rem;
+      text-transform: uppercase;
+      color: black;
+     }  
+
+}
+.artcon {
+     min-height: 100vh;  
+  height: auto;
+    width:100%; margin-top: 3%;
+    padding: 1rem; 
+    padding-left: 8%;
+    flex-shrink: 0;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap:30px;
+    /* border: 2px solid red; */
+}
+
+.PC {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+ .port {
+        /* width:300px; height: 400px; */
+          /* width:15rem; height: 20rem; */
+          width: 19.625vw;    height: 56.97vh;
+        padding: 1rem;
+        line-height: 1.6;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.35s ease;
+     }
+
+.ab{
+    position: absolute; top:0; left:0;
+    /* width:300px; height: 400px; */
+              /* width:15rem; height: 20rem; */
+          width: 19.625vw;    height: 56.97vh;
+
+}
+
+.port, .ab {
+  min-height: 12rem;
+  height: 100%;        
+}
+
+.port figcap {
+  position: absolute;
+  /* top:70%; */
+  left:22%;
+  bottom: 0;
+  /* width: 40%; */
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  transform: translateY(30%);
+  transition: transform 0.35s ease;
+  z-index: 2;
+      /* color: rgb(246, 142, 7); */
+  .tit { font-size: 1.5rem;   font-weight:800;    color: #ea7d24;    }
+    .villa { font-size: 0.9rem;  font-weight: 800; color: black;}
+     .arr i { font-size: 1.25rem; position: relative;    left:40%; }
+
+}
+.port:hover .villa {   color: white; font-weight: bold;  }
+.port:hover figcap { transform: translateY(-15%);  }
+
+.port:hover .ab {  backdrop-filter: brightness(50%);   }
+
+.port1 { background-image: url('/Architec/art1.webp');   background-size: 100% 100%;    }
+
+.port2 { background-image: url('/Architec/art2.png');   background-size: 100% 100%;    }
+
+.port3 { background-image: url('/Architec/art3.png');   background-size: 100% 100%;    }
+
+.port4 { background-image: url('/Architec/art41-Photoroom.png');   background-size: 100% 100%;    }
+
+.port5 { background-image: url('/Architec/ar3d.jpg');   background-size: 100% 100%;    }
+
+.port6 { background-image: url('/Architec/art6.jpg');   background-size: 100% 100%;    }
+
+
+.EBCON {
+    min-height: 80vh;   margin-top: 3%;
+    background: url('/Architec/build3.webp') center/cover no-repeat;
+    position: relative;
+}
+.EBCON::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.15);
+    }
+    .card {
+      width: 31.25vw;
+        /* width: 600px;  */
+        height: 40.4074vh;
+           /* height: 350px; */
+        position: absolute;     top:18%;
+        padding: 1rem;
+        justify-self: center;
+        text-align: center;
+        line-height: 1.6;   
+         background: transparent;
+       backdrop-filter: brightness(50%);    
+        border: 7px solid rgb(246, 199, 139);
+    }
+    .eb{                 position: relative;  top:25%; 
+        line-height: 1.8;   
+        }
+     .name {
+               font-size: 1.875rem; font-weight: bold;                
+                color: rgb(246, 199, 139);              
+    }
+    .role {
+               font-size: 1.25rem; font-weight: bold;
+                color: whitesmoke;    
+    }
+    .quote1 {   font-size: 1.063rem;     color: whitesmoke;     }
+
+.quote-mark {
+      width: 3.125rem;      height: 3.125rem;
+      position: absolute;
+      top: -30px;
+      left: 75%;
+      background: transparent;
+      backdrop-filter: brightness(50%);
+      padding: 0.25rem 0.0rem;
+       font-size: 5rem;
+      font-weight: bold;
+      color: transparent;
+      -webkit-text-stroke: 1px rgb(246, 199, 139); 
+      line-height: 1;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+.allright {
+            width: 100%;   height: 300px;
+            margin-top: 8%;
+            p{
+                position: relative;     top:20%;
+                left:75%;
+                color: grey;
+            }
+}
+
+/* ///////////TOGOLOGO////////////// */
+
+.logo {
+    position: fixed;   top:10%;
+    width: 18%;
+    padding: 0.2rem;
+    background: transparent;
+    backdrop-filter: brightness(50%);
+
+     .mb {display: none;}
+     h5 {
+        position: relative;     left:25%;
+        font-size: 2.1875rem;
+        color:goldenrod;
+     }
+     .para {
+        font-size: 0.9375rem;
+        letter-spacing: 0.75rem;
+        color:grey;
+
+        text-transform: uppercase;
+    }
+}
+
+/* ///////////NAVBAR////////////// */
+
+.navbar {
+  max-width: 100%;
+  width:53%;
+  padding: 1rem;
+ display:flex;
+ margin-right: 1.5625rem;
+ background: transparent;
+ backdrop-filter: brightness(50%);
+  align-content: center;
+ justify-content: space-evenly; 
+  color: #fff;
+  position: fixed; top:10%;   left:45.7%;
+
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-icon, .close-icon{
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+    .lg1 { display: none;    }
+    
+#menu-toggle, .mb {
+  display: none;
+}
+
+
+/* ////////ANCHOR TAG STYLE///////// */
+
+a {
+  text-decoration: none;  
+  display: flex;
+  position: relative;
+  color:white;  
+}
+
+.a1:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  top:100%;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%;  
+  left: 0; 
+}
+.navbar a:hover {    
+    transition: all 300ms ease;
+}
+
+
+
+
+
+@media  (max-width: 768px) {
+
+  .logo, .slide {  display: none; }
+
+ /* /////////NAVBAR//////// */
+
+  .lg1{
+    position: fixed; top:-10%;
+    display: inline-block;  
+    text-align: center;
+    padding-left:30%;
+    font-size: 2.5rem;
+    color:goldenrod;
+  }
+
+ .navbar {
+  position: fixed;
+  left:0;   right:0;
+   top:2%;
+       width:100%; height:2.5rem;
+    color:black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: transparent;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    height: 80vh;
+    width: 250px;
+     padding-top: 30px;
+    margin-top: 45px; 
+    background: #444;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    overflow: hidden;
+  }
+
+.nav-links a{
+
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 10px;
+        color:white;        
+        box-sizing: border-box;       
+        transition: 0.5s;
+        transition-property: background; 
+    } 
+    .nav-links a:hover {
+        width:100%;
+        background:skyblue;
+        box-shadow:2px 2px 15px whitesmoke;
+        }
+
+  #menu-toggle:checked ~ .nav-links {
+    left: 0;
+  }
+
+  .menu-icon {
+    display:block;
+    position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 2000;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+/* ///////////////TOGOPORT///////////////// */
+
+  .container {
+     width: 100%;
+      min-height: 200vh;  
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; 
+  flex-shrink: 0;
+
+}
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 200vh;  
+  height: 100%;
+    top:0px;    left:0;
+        overflow: hidden; 
+}
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ .PW {
+    position: relative;
+    width: 100%;
+    min-height: 380vh;  
+  height: auto;  
+    top:0px;    left:0;
+        overflow: hidden;
+} 
+.portvideo{
+    width:100%;    
+     height:40vh;
+    position: relative; overflow: hidden;  
+}
+
+  #myVideo {
+    width: 100%;
+    height: 100%;     
+    position: absolute;    
+  } 
+   .PC {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+  }
+  
+  .port {
+    max-width: 500px;
+    width: 100%;               
+    min-height: 12rem; 
+    height: auto;        
+     display: flex;             
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+     background-size: 100% 100%;    
+    background-position: center; 
+    border-radius: 8px;
+  }
+
+  .ab {
+    width: 100%;
+     min-height: 12rem; 
+    height: auto; 
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+  }
+figcap {
+  text-align: center;
+  margin-left:0%;
+}
+  .tit {
+    font-size: 0.5rem;
+  }
+
+  .villa {
+    font-size: 0.95rem;
+    display: block;
+  }
+
+  .arr a {
+    /* display: block; */
+    font-size: 1rem;
+  }
+
+.card {
+    width: 80%;             
+    height: auto;          
+    top: 30%;               
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 1rem;
+    border-width: 5px;     
+  }
+
+  .eb {
+    top: 0;                  
+    line-height: 1.6;
+  }
+
+  .name {
+    font-size: 1.4rem;     
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .quote1 {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;      
+  }
+
+  .quote-mark {
+    font-size: 3rem;         
+    top: -20px;
+    left: 70%;             
+  }
+
+  .allright {
+  margin-top: 10px;
+  margin-left: -55%;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

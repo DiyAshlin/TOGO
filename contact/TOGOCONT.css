@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        html {  scroll-behavior: smooth;  }
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+        flex-shrink: 0;  
+    }
+
+.wrapper {
+  display: block;
+    width: 100%;
+    min-height: 100vh;  
+  height: auto;   
+    top:0px;    left:0;
+        overflow: hidden;
+}
+
+.serv{
+     margin-top: 3%;   padding: 1rem; 
+     line-height: 1.6;
+
+     .WWD {
+        font-size: 1.125rem; letter-spacing: 5px;
+      text-transform: uppercase; font-weight: bold;
+      color: rgb(246, 142, 7);
+     }  
+     .OS {
+        font-size: 2.5rem;
+      text-transform: uppercase;
+      color: black;
+     }  
+
+}
+
+.locationcon{
+    max-width:1500px;
+    width: 100%;
+    display: flex;  gap:15px;
+    justify-content: space-evenly;
+    margin-top: 3%; padding: 1rem;
+
+    .loco {
+        width:500px;    height: 300px;
+        padding: 1rem;  border-radius: 8px;
+    }
+    h3 { font-size: 25px; color: rgb(237, 170, 84);  margin-top: 10%;  margin-bottom: 5%;   }
+
+    span, .sicon { color:grey; font-size: 18px; line-height: 1.8;  } 
+}
+
+ .loco:hover {
+    background-image: url('/Architec/cont.jpg');
+    background-size:100% 100% ;  
+}
+
+.loco h3,
+.loco span {  transition: color 0.3s ease;  }
+
+.loco:hover h3,
+.loco:hover span,
+.loco:hover .sicon {  color: white;   }
+
+.map {
+      width: 100%;
+      max-width: 1500px;
+      height: 400px;
+      margin: 2rem auto;
+      margin-top: 5%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter:invert(100%);
+    }
+
+
+.allright {
+            width: 100%;   height: 300px;
+            margin-top: 8%;
+            p{
+                position: relative;     top:20%;
+                left:75%;
+                color: grey;
+            }
+}
+
+/* ///////////TOGOLOGO////////////// */
+
+.logo {
+    position: fixed;   top:10%;
+    width: 18%;
+    padding: 0.2rem;
+    background: transparent;
+    backdrop-filter: brightness(50%);
+
+     .mb {display: none;}
+     h5 {
+        position: relative;     left:25%;
+        font-size: 2.1875rem;
+        color:goldenrod;
+     }
+     .para {
+        font-size: 0.9375rem;
+        letter-spacing: 0.75rem;
+        color:grey;
+
+        text-transform: uppercase;
+    }
+}
+
+/* ///////////NAVBAR////////////// */
+
+.navbar {
+  max-width: 100%;
+  width:53%;
+  padding: 1rem;
+ display:flex;
+ margin-right: 1.5625rem;
+ background: transparent;
+ backdrop-filter: brightness(50%);
+  align-content: center;
+ justify-content: space-evenly; 
+  color: #fff;
+  position: fixed; top:10%;   left:45.7%;
+
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu-icon, .close-icon{
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+    .lg1 { display: none;    }
+    
+#menu-toggle, .mb {
+  display: none;
+}
+
+
+/* ////////ANCHOR TAG STYLE///////// */
+
+a {
+  text-decoration: none;  
+  display: flex;
+  position: relative;
+  color:white;  
+}
+
+.a1:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  top:100%;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%;  
+  left: 0; 
+}
+.navbar a:hover {    
+    transition: all 300ms ease;
+}
+
+
+
+
+
+@media  (max-width: 768px) {
+
+  .logo, .slide {  display: none; }
+
+ /* /////////NAVBAR//////// */
+
+  .lg1{
+    position: fixed; top:-10%;
+    display: inline-block;  
+    text-align: center;
+    padding-left:30%;
+    font-size: 2.5rem;
+    color:goldenrod;
+  }
+
+ .navbar {
+  position: fixed;
+  left:0;   right:0;
+   top:2%;
+       width:100%; height:2.5rem;
+    color:black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: transparent;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    height: 80vh;
+    width: 250px;
+     padding-top: 30px;
+    margin-top: 45px; 
+    background: #444;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+    overflow: hidden;
+  }
+
+.nav-links a{
+
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 10px;
+        color:white;        
+        box-sizing: border-box;       
+        transition: 0.5s;
+        transition-property: background; 
+    } 
+    .nav-links a:hover {
+        width:100%;
+        background:skyblue;
+        box-shadow:2px 2px 15px whitesmoke;
+        }
+
+  #menu-toggle:checked ~ .nav-links {
+    left: 0;
+  }
+
+  .menu-icon {
+    display:block;
+    position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 2000;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+/* ///////////////TOGOCONT///////////////// */
+
+  .container {
+     width: 100%;
+      min-height: 200vh;  
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; 
+  flex-shrink: 0;
+
+}
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 200vh;  
+  height: 100%;
+    top:0px;    left:0;
+        overflow: hidden; 
+}
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+.locationcon {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .locationcon .loco {
+    width: 90%;  
+    height: auto; 
+  }
+
+  .locationcon h3 {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+
+  .locationcon span,
+  .locationcon .sicon {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+   .map {
+    height: 300px; /* smaller map on mobile */
+  }
+
+    .allright {
+  margin-top: 10px;
+  margin-left: -55%;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+}
+
+
